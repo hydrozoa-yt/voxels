@@ -1,7 +1,5 @@
 package com.hydrozoa.voxels.screen;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -26,8 +24,6 @@ import com.hydrozoa.voxels.thread.MeshWorkerResult;
 import com.hydrozoa.voxels.util.ArrayUtils;
 
 public class VoxelScreen extends GameScreen {
-	
-	private List<Future<MeshWorkerResult>> results = new ArrayList<Future<MeshWorkerResult>>();
 	
 	private VoxelShader shader;
 	private Texture texture;
