@@ -89,7 +89,9 @@ public class VoxelScreen extends GameScreen {
 			try {
 				//System.out.println("Thread returned, now uploading new mesh to GPU...");
 				workerResult = workerFuture.get();
+				long beforeNanos = System.nanoTime();
 				chunk.updateMesh(new TexturedMesh(workerResult.getPositions(),  workerResult.getUvs()));
+				System.out.println("Uploading of mesh took: "+(System.nanoTime()-beforeNanos)/1000000+" ms.");
 				workerFuture = null;
 			} catch (InterruptedException e) {
 				// does not happen as these threads never wait() or sleep()
