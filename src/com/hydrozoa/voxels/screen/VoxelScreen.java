@@ -76,7 +76,7 @@ public class VoxelScreen extends GameScreen {
 		int x = MathUtils.random(Chunk.SIZE_X-1);
 		int y = MathUtils.random(Chunk.SIZE_Y-1);
 		int z = MathUtils.random(Chunk.SIZE_Z-1);
-		//chunk.removeBlock(x, y, z);
+		chunk.removeBlock(x, y, z);
 		
 		// schedule thread to mesh chunk
 		if (chunk.needsFreshMesh() && workerFuture == null) {

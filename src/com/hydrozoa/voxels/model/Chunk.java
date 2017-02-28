@@ -5,9 +5,9 @@ import com.hydrozoa.voxels.graphics.TexturedMesh;
 
 public class Chunk {
 	
-	public final static int SIZE_X = 32;
+	public final static int SIZE_X = 16;
 	public final static int SIZE_Y = 256;
-	public final static int SIZE_Z = 32;
+	public final static int SIZE_Z = 16;
 	
 	private byte[][][] blocks;
 	
