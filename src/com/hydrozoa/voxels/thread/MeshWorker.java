@@ -120,237 +120,229 @@ public class MeshWorker implements Callable<MeshWorkerResult> {
 	}
 	
 	private void addBottomFace(float[] positionBuffer, float[] uvBuffer, int x, int y, int z) {
-		positionBuffer[positionIndex++] = x*1f+0f;
-		positionBuffer[positionIndex++] = y*1f+1f;
-		positionBuffer[positionIndex++] = z*-1f+0f;
+		positionBuffer[positionIndex++] = x * 1f + 0f;
+		positionBuffer[positionIndex++] = y * 1f + 0f;
+		positionBuffer[positionIndex++] = z * -1f + 0f;
 		uvBuffer[uvIndex++] = 0f;
 		uvBuffer[uvIndex++] = 0f;
-		
-		positionBuffer[positionIndex++] = x*1f+1f;
-		positionBuffer[positionIndex++] = y*1f+1f;
-		positionBuffer[positionIndex++] = z*-1f+0f;
+
+		positionBuffer[positionIndex++] = x * 1f + 1f;
+		positionBuffer[positionIndex++] = y * 1f + 0f;
+		positionBuffer[positionIndex++] = z * -1f + 0f;
 		uvBuffer[uvIndex++] = 1f;
 		uvBuffer[uvIndex++] = 0f;
-		
-		positionBuffer[positionIndex++] = x*1f+1f;
-		positionBuffer[positionIndex++] = y*1f+1f;
-		positionBuffer[positionIndex++] = z*-1f+-1f;
+
+		positionBuffer[positionIndex++] = x * 1f + 1f;
+		positionBuffer[positionIndex++] = y * 1f + 0f;
+		positionBuffer[positionIndex++] = z * -1f + -1f;
 		uvBuffer[uvIndex++] = 1f;
 		uvBuffer[uvIndex++] = 1f;
-	
-		positionBuffer[positionIndex++] = x*1f+1f;
-		positionBuffer[positionIndex++] = y*1f+1f;
-		positionBuffer[positionIndex++] = z*-1f+-1f;
+
+		positionBuffer[positionIndex++] = x * 1f + 1f;
+		positionBuffer[positionIndex++] = y * 1f + 0f;
+		positionBuffer[positionIndex++] = z * -1f + -1f;
 		uvBuffer[uvIndex++] = 1f;
 		uvBuffer[uvIndex++] = 1f;
-		
-		
-		positionBuffer[positionIndex++] = x*1f+0f;
-		positionBuffer[positionIndex++] = y*1f+1f;
-		positionBuffer[positionIndex++] = z*-1f+-1f;
+
+		positionBuffer[positionIndex++] = x * 1f + 0f;
+		positionBuffer[positionIndex++] = y * 1f + 0f;
+		positionBuffer[positionIndex++] = z * -1f + -1f;
 		uvBuffer[uvIndex++] = 0f;
 		uvBuffer[uvIndex++] = 1f;
-		
-		
-		positionBuffer[positionIndex++] = x*1f+0f;
-		positionBuffer[positionIndex++] = y*1f+1f;
-		positionBuffer[positionIndex++] = z*-1f+0f;
+
+		positionBuffer[positionIndex++] = x * 1f + 0f;
+		positionBuffer[positionIndex++] = y * 1f + 0f;
+		positionBuffer[positionIndex++] = z * -1f + 0f;
 		uvBuffer[uvIndex++] = 0f;
 		uvBuffer[uvIndex++] = 0f;
 	}
-	
+
 	private void addFrontFace(float[] positionBuffer, float[] uvBuffer, int x, int y, int z) {
-		positionBuffer[positionIndex++] = x*1f+1f;
-		positionBuffer[positionIndex++] = y*1f+0f;
-		positionBuffer[positionIndex++] = z*-1f+-1f;
+		positionBuffer[positionIndex++] = x * 1f + 1f;
+		positionBuffer[positionIndex++] = y * 1f + 0f;
+		positionBuffer[positionIndex++] = z * -1f + -1f;
 		uvBuffer[uvIndex++] = 0f;
 		uvBuffer[uvIndex++] = 0f;
-		
-		positionBuffer[positionIndex++] = x*1f+0f;
-		positionBuffer[positionIndex++] = y*1f+0f;
-		positionBuffer[positionIndex++] = z*-1f+-1f;
+
+		positionBuffer[positionIndex++] = x * 1f + 0f;
+		positionBuffer[positionIndex++] = y * 1f + 0f;
+		positionBuffer[positionIndex++] = z * -1f + -1f;
 		uvBuffer[uvIndex++] = 1f;
 		uvBuffer[uvIndex++] = 0f;
-		
-		
-		positionBuffer[positionIndex++] = x*1f+0f;
-		positionBuffer[positionIndex++] = y*1f+1f;
-		positionBuffer[positionIndex++] = z*-1f+-1f;
+
+		positionBuffer[positionIndex++] = x * 1f + 0f;
+		positionBuffer[positionIndex++] = y * 1f + 1f;
+		positionBuffer[positionIndex++] = z * -1f + -1f;
 		uvBuffer[uvIndex++] = 1f;
 		uvBuffer[uvIndex++] = 1f;
-		
-		positionBuffer[positionIndex++] = x*1f+0f;
-		positionBuffer[positionIndex++] = y*1f+1f;
-		positionBuffer[positionIndex++] = z*-1f+-1f;
+
+		positionBuffer[positionIndex++] = x * 1f + 0f;
+		positionBuffer[positionIndex++] = y * 1f + 1f;
+		positionBuffer[positionIndex++] = z * -1f + -1f;
 		uvBuffer[uvIndex++] = 1f;
 		uvBuffer[uvIndex++] = 1f;
-		
-		positionBuffer[positionIndex++] = x*1f+1f;
-		positionBuffer[positionIndex++] = y*1f+1f;
-		positionBuffer[positionIndex++] = z*-1f+-1f;
+
+		positionBuffer[positionIndex++] = x * 1f + 1f;
+		positionBuffer[positionIndex++] = y * 1f + 1f;
+		positionBuffer[positionIndex++] = z * -1f + -1f;
 		uvBuffer[uvIndex++] = 0f;
 		uvBuffer[uvIndex++] = 1f;
-		
-		positionBuffer[positionIndex++] = x*1f+1f;
-		positionBuffer[positionIndex++] = y*1f+0f;
-		positionBuffer[positionIndex++] = z*-1f+-1f;
+
+		positionBuffer[positionIndex++] = x * 1f + 1f;
+		positionBuffer[positionIndex++] = y * 1f + 0f;
+		positionBuffer[positionIndex++] = z * -1f + -1f;
 		uvBuffer[uvIndex++] = 0f;
 		uvBuffer[uvIndex++] = 0f;
 	}
-	
+
 	private void addBackFace(float[] positionBuffer, float[] uvBuffer, int x, int y, int z) {
-		positionBuffer[positionIndex++] = x*1f+0f;
-		positionBuffer[positionIndex++] = y*1f+0f;
-		positionBuffer[positionIndex++] = z*-1f+0f;
+		positionBuffer[positionIndex++] = x * 1f + 0f;
+		positionBuffer[positionIndex++] = y * 1f + 0f;
+		positionBuffer[positionIndex++] = z * -1f + 0f;
 		uvBuffer[uvIndex++] = 0f;
 		uvBuffer[uvIndex++] = 0f;
-		
-		positionBuffer[positionIndex++] = x*1f+1f;
-		positionBuffer[positionIndex++] = y*1f+0f;
-		positionBuffer[positionIndex++] = z*-1f+0f;
+
+		positionBuffer[positionIndex++] = x * 1f + 1f;
+		positionBuffer[positionIndex++] = y * 1f + 0f;
+		positionBuffer[positionIndex++] = z * -1f + 0f;
 		uvBuffer[uvIndex++] = 1f;
 		uvBuffer[uvIndex++] = 0f;
-		
-		positionBuffer[positionIndex++] = x*1f+1f;
-		positionBuffer[positionIndex++] = y*1f+1f;
-		positionBuffer[positionIndex++] = z*-1f+0f;
+
+		positionBuffer[positionIndex++] = x * 1f + 1f;
+		positionBuffer[positionIndex++] = y * 1f + 1f;
+		positionBuffer[positionIndex++] = z * -1f + 0f;
 		uvBuffer[uvIndex++] = 1f;
 		uvBuffer[uvIndex++] = 1f;
-		
-		positionBuffer[positionIndex++] = x*1f+1f;
-		positionBuffer[positionIndex++] = y*1f+1f;
-		positionBuffer[positionIndex++] = z*-1f+0f;
+
+		positionBuffer[positionIndex++] = x * 1f + 1f;
+		positionBuffer[positionIndex++] = y * 1f + 1f;
+		positionBuffer[positionIndex++] = z * -1f + 0f;
 		uvBuffer[uvIndex++] = 1f;
 		uvBuffer[uvIndex++] = 1f;
-		
-		
-		positionBuffer[positionIndex++] = x*1f+0f;
-		positionBuffer[positionIndex++] = y*1f+1f;
-		positionBuffer[positionIndex++] = z*-1f+0f;
+
+		positionBuffer[positionIndex++] = x * 1f + 0f;
+		positionBuffer[positionIndex++] = y * 1f + 1f;
+		positionBuffer[positionIndex++] = z * -1f + 0f;
 		uvBuffer[uvIndex++] = 0f;
 		uvBuffer[uvIndex++] = 1f;
-		
-		
-		positionBuffer[positionIndex++] = x*1f+0f;
-		positionBuffer[positionIndex++] = y*1f+0f;
-		positionBuffer[positionIndex++] = z*-1f+0f;
+
+		positionBuffer[positionIndex++] = x * 1f + 0f;
+		positionBuffer[positionIndex++] = y * 1f + 0f;
+		positionBuffer[positionIndex++] = z * -1f + 0f;
 		uvBuffer[uvIndex++] = 0f;
 		uvBuffer[uvIndex++] = 0f;
 	}
-	
+
 	private void addRightFace(float[] positionBuffer, float[] uvBuffer, int x, int y, int z) {
-		positionBuffer[positionIndex++] = x*1f+1f;
-		positionBuffer[positionIndex++] = y*1f+0f;
-		positionBuffer[positionIndex++] = z*-1f+0f;
+		positionBuffer[positionIndex++] = x * 1f + 1f;
+		positionBuffer[positionIndex++] = y * 1f + 0f;
+		positionBuffer[positionIndex++] = z * -1f + 0f;
 		uvBuffer[uvIndex++] = 0f;
 		uvBuffer[uvIndex++] = 0f;
-		
-		positionBuffer[positionIndex++] = x*1f+1f;
-		positionBuffer[positionIndex++] = y*1f+0f;
-		positionBuffer[positionIndex++] = z*-1f+-1f;
+
+		positionBuffer[positionIndex++] = x * 1f + 1f;
+		positionBuffer[positionIndex++] = y * 1f + 0f;
+		positionBuffer[positionIndex++] = z * -1f + -1f;
 		uvBuffer[uvIndex++] = 1f;
 		uvBuffer[uvIndex++] = 0f;
-		
-		positionBuffer[positionIndex++] = x*1f+1f;
-		positionBuffer[positionIndex++] = y*1f+1f;
-		positionBuffer[positionIndex++] = z*-1f+-1f;
+
+		positionBuffer[positionIndex++] = x * 1f + 1f;
+		positionBuffer[positionIndex++] = y * 1f + 1f;
+		positionBuffer[positionIndex++] = z * -1f + -1f;
 		uvBuffer[uvIndex++] = 1f;
 		uvBuffer[uvIndex++] = 1f;
-		
-		positionBuffer[positionIndex++] = x*1f+1f;
-		positionBuffer[positionIndex++] = y*1f+1f;
-		positionBuffer[positionIndex++] = z*-1f+-1f;
+
+		positionBuffer[positionIndex++] = x * 1f + 1f;
+		positionBuffer[positionIndex++] = y * 1f + 1f;
+		positionBuffer[positionIndex++] = z * -1f + -1f;
 		uvBuffer[uvIndex++] = 1f;
 		uvBuffer[uvIndex++] = 1f;
-		
-		positionBuffer[positionIndex++] = x*1f+1f;
-		positionBuffer[positionIndex++] = y*1f+1f;
-		positionBuffer[positionIndex++] = z*-1f+0f;
+
+		positionBuffer[positionIndex++] = x * 1f + 1f;
+		positionBuffer[positionIndex++] = y * 1f + 1f;
+		positionBuffer[positionIndex++] = z * -1f + 0f;
 		uvBuffer[uvIndex++] = 0f;
 		uvBuffer[uvIndex++] = 1f;
-		
-		positionBuffer[positionIndex++] = x*1f+1f;
-		positionBuffer[positionIndex++] = y*1f+0f;
-		positionBuffer[positionIndex++] = z*-1f+0f;
+
+		positionBuffer[positionIndex++] = x * 1f + 1f;
+		positionBuffer[positionIndex++] = y * 1f + 0f;
+		positionBuffer[positionIndex++] = z * -1f + 0f;
 		uvBuffer[uvIndex++] = 0f;
 		uvBuffer[uvIndex++] = 0f;
 	}
-	
+
 	private void addLeftFace(float[] positionBuffer, float[] uvBuffer, int x, int y, int z) {
-		positionBuffer[positionIndex++] = x*1f+0f;
-		positionBuffer[positionIndex++] = y*1f+0f;
-		positionBuffer[positionIndex++] = z*-1f+-1f;
+		positionBuffer[positionIndex++] = x * 1f + 0f;
+		positionBuffer[positionIndex++] = y * 1f + 0f;
+		positionBuffer[positionIndex++] = z * -1f + -1f;
 		uvBuffer[uvIndex++] = 0f;
 		uvBuffer[uvIndex++] = 0f;
-		
-		positionBuffer[positionIndex++] = x*1f+0f;
-		positionBuffer[positionIndex++] = y*1f+0f;
-		positionBuffer[positionIndex++] = z*-1f+0f;
+
+		positionBuffer[positionIndex++] = x * 1f + 0f;
+		positionBuffer[positionIndex++] = y * 1f + 0f;
+		positionBuffer[positionIndex++] = z * -1f + 0f;
 		uvBuffer[uvIndex++] = 1f;
 		uvBuffer[uvIndex++] = 0f;
-		
-		
-		positionBuffer[positionIndex++] = x*1f+0f;
-		positionBuffer[positionIndex++] = y*1f+1f;
-		positionBuffer[positionIndex++] = z*-1f+0f;
+
+		positionBuffer[positionIndex++] = x * 1f + 0f;
+		positionBuffer[positionIndex++] = y * 1f + 1f;
+		positionBuffer[positionIndex++] = z * -1f + 0f;
 		uvBuffer[uvIndex++] = 1f;
 		uvBuffer[uvIndex++] = 1f;
-		
-		positionBuffer[positionIndex++] = x*1f+0f;
-		positionBuffer[positionIndex++] = y*1f+1f;
-		positionBuffer[positionIndex++] = z*-1f+0f;
+
+		positionBuffer[positionIndex++] = x * 1f + 0f;
+		positionBuffer[positionIndex++] = y * 1f + 1f;
+		positionBuffer[positionIndex++] = z * -1f + 0f;
 		uvBuffer[uvIndex++] = 1f;
 		uvBuffer[uvIndex++] = 1f;
-		
-		positionBuffer[positionIndex++] = x*1f+0f;
-		positionBuffer[positionIndex++] = y*1f+1f;
-		positionBuffer[positionIndex++] = z*-1f+-1f;
+
+		positionBuffer[positionIndex++] = x * 1f + 0f;
+		positionBuffer[positionIndex++] = y * 1f + 1f;
+		positionBuffer[positionIndex++] = z * -1f + -1f;
 		uvBuffer[uvIndex++] = 0f;
 		uvBuffer[uvIndex++] = 1f;
-		
-		
-		positionBuffer[positionIndex++] = x*1f+0f;
-		positionBuffer[positionIndex++] = y*1f+0f;
-		positionBuffer[positionIndex++] = z*-1f+-1f;
+
+		positionBuffer[positionIndex++] = x * 1f + 0f;
+		positionBuffer[positionIndex++] = y * 1f + 0f;
+		positionBuffer[positionIndex++] = z * -1f + -1f;
 		uvBuffer[uvIndex++] = 0f;
 		uvBuffer[uvIndex++] = 0f;
 	}
-	
+
 	private void addTopFace(float[] positionBuffer, float[] uvBuffer, int x, int y, int z) {
-		positionBuffer[positionIndex++] = x*1f+0f;
-		positionBuffer[positionIndex++] = y*1f+0f;
-		positionBuffer[positionIndex++] = z*-1f+0f;
+		positionBuffer[positionIndex++] = x * 1f + 0f;
+		positionBuffer[positionIndex++] = y * 1f + 1f;
+		positionBuffer[positionIndex++] = z * -1f + 0f;
 		uvBuffer[uvIndex++] = 0f;
 		uvBuffer[uvIndex++] = 0f;
-		
-		positionBuffer[positionIndex++] = x*1f+1f;
-		positionBuffer[positionIndex++] = y*1f+0f;
-		positionBuffer[positionIndex++] = z*-1f+0f;
+
+		positionBuffer[positionIndex++] = x * 1f + 1f;
+		positionBuffer[positionIndex++] = y * 1f + 1f;
+		positionBuffer[positionIndex++] = z * -1f + 0f;
 		uvBuffer[uvIndex++] = 1f;
 		uvBuffer[uvIndex++] = 0f;
-		
-		positionBuffer[positionIndex++] = x*1f+1f;
-		positionBuffer[positionIndex++] = y*1f+0f;
-		positionBuffer[positionIndex++] = z*-1f+-1f;
+
+		positionBuffer[positionIndex++] = x * 1f + 1f;
+		positionBuffer[positionIndex++] = y * 1f + 1f;
+		positionBuffer[positionIndex++] = z * -1f + -1f;
 		uvBuffer[uvIndex++] = 1f;
 		uvBuffer[uvIndex++] = 1f;
-		
-		positionBuffer[positionIndex++] = x*1f+1f;
-		positionBuffer[positionIndex++] = y*1f+0f;
-		positionBuffer[positionIndex++] = z*-1f+-1f;
+
+		positionBuffer[positionIndex++] = x * 1f + 1f;
+		positionBuffer[positionIndex++] = y * 1f + 1f;
+		positionBuffer[positionIndex++] = z * -1f + -1f;
 		uvBuffer[uvIndex++] = 1f;
 		uvBuffer[uvIndex++] = 1f;
-		
-		positionBuffer[positionIndex++] = x*1f+0f;
-		positionBuffer[positionIndex++] = y*1f+0f;
-		positionBuffer[positionIndex++] = z*-1f+-1f;
+
+		positionBuffer[positionIndex++] = x * 1f + 0f;
+		positionBuffer[positionIndex++] = y * 1f + 1f;
+		positionBuffer[positionIndex++] = z * -1f + -1f;
 		uvBuffer[uvIndex++] = 0f;
 		uvBuffer[uvIndex++] = 1f;
-		
-		
-		positionBuffer[positionIndex++] = x*1f+0f;
-		positionBuffer[positionIndex++] = y*1f+0f;
-		positionBuffer[positionIndex++] = z*-1f+0f;
+
+		positionBuffer[positionIndex++] = x * 1f + 0f;
+		positionBuffer[positionIndex++] = y * 1f + 1f;
+		positionBuffer[positionIndex++] = z * -1f + 0f;
 		uvBuffer[uvIndex++] = 0f;
 		uvBuffer[uvIndex++] = 0f;
 	}
